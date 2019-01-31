@@ -15,7 +15,7 @@ def get_long_description():
 
 setup(
     name="dbf-to-sqlite",
-    description="CLCLI tool for converting DBF files (dBase, FoxPro etc) to SQLite",
+    description="CLI tool for converting DBF files (dBase, FoxPro etc) to SQLite",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Simon Willison",
