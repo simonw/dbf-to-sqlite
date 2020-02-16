@@ -4,8 +4,13 @@
 [![Travis CI](https://travis-ci.com/simonw/dbf-to-sqlite.svg?branch=master)](https://travis-ci.com/simonw/dbf-to-sqlite)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/dbf-to-sqlite/blob/master/LICENSE)
 
-
 CLI tool for converting DBF files (dBase, FoxPro etc) to SQLite.
+
+## Installation
+
+    pip install dbf-to-sqlite
+
+## Usage
 
     $ dbf-to-sqlite --help
     Usage: dbf-to-sqlite [OPTIONS] DBF_PATHS... SQLITE_DB
