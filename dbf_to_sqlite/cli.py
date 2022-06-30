@@ -23,9 +23,9 @@ def cli(dbf_paths, sqlite_db, table, verbose):
         table_name = table if table else Path(path).stem
         if verbose:
             click.echo('Loading {} into table "{}"'.format(path, table_name))
-        table = dbf.Table(str(path))
-        table.open()
-        columns = table.field_names
-        db[table_name].insert_all(dict(zip(columns, list(row))) for row in table)
-        table.close()
+        dbf_table = dbf.Table(str(path))
+        dbf_table.open()
+        columns = dbf_table.field_names
+        db[table_name].insert_all(dict(zip(columns, list(row))) for row in dbf_table)
+        dbf_table.close()
     db.vacuum()
